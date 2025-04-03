@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sobre Mágico</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .sobre {
+            width: 500px;
+            height: 400px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sobre:hover {
+            transform: scale(1.1);
+        }
+
+        .carta {
+            display: none;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .carta h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .carta p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <img id="sobreImg" class="sobre" src="img/sobre_cerrado.png.jpg" alt="Sobre Cerrado">
+    <div id="cartaDiv" class="carta">
+        <h2>Un Mensaje para Ti</h2>
+        <p>En cada estrella que brilla en la noche,<br>encuentro un reflejo de tu alma.</p>
+    </div>
+
+    <script>
+        const sobreImg = document.getElementById('sobreImg');
+        const cartaDiv = document.getElementById('cartaDiv');
+
+        sobreImg.addEventListener('click', () => {
+ 
+            cartaDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

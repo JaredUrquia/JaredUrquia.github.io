@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.sobre {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sobre:hover {
+    transform: scale(1.1);
+}
+
+.carta {
+    display: none;
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.carta h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.carta p {
+    color: #555;
+}
